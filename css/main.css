@@ -221,6 +221,9 @@ header .survey {
     padding:76px 0 0 159px;
     width:930px;
 }
+#slideshow img {
+    width:100%;
+}
 #slideshow div {
     background:#222;
     height:481px;

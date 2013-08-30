@@ -9,19 +9,17 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel='stylesheet' media='all and (min-width:740px) and (min-device-width:740px),(max-device-width:800px) and (min-width:740px) and (orientation:landscape)' href='css/medium.css' />
+        <link rel='stylesheet' media='all and (min-width:980px) and (min-device-width:980px),all and (max-device-width:1024px) and (min-width:1024px) and (orientation:landscape)' href='css/large.css' />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
 
         <header>
             <div class="clearfix">
@@ -35,12 +33,16 @@
             <h2>Help us build the perfect experience by filling in our survey</h2>
             <div id="actions">
                 <a href="" class="btn survey"><i class="s pen"></i> Take the Survey</a>
-                <a href="" class="btn playvideo">Play Tour Video <i class="s plays"></i></a>
+                <a href="http://player.vimeo.com/video/32951031" class="btn playvideo fcb fancybox.iframe">Play Tour Video <i class="s plays"></i></a>
             </div>
             <div id="slideshow">
                 <div>
                     <ul id="carousel">
-                        <li>testing</li>
+                        <li>
+                            <a href="http://player.vimeo.com/video/32951031" class="fcb fancybox.iframe">
+                                <img src="img/slideshow/portal1.jpg" alt="" />
+                            </a>
+                        </li>
                         <li>testing 2</li>
                         <li>testing 3</li>
                         <li>testing 4</li>
@@ -103,7 +105,7 @@
 
         <footer class="clearfix">
             <div id="footernav" class="fl">
-                <img src="img/equiem.png" alt="Powered by Equiem" />
+                <a href="http://equiem.com.au" target="_blank"><img src="img/equiem.png" alt="Powered by Equiem" /></a>
                 <a href="">Terms</a>&nbsp;
                 <i class="s line"></i>&nbsp;
                 <a href="">Privacy</a>&nbsp;
@@ -119,6 +121,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="js/vendor/jquery.fancybox.pack.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
