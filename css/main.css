@@ -84,24 +84,116 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.s {
+    background:url(../img/bgsp.png) no-repeat;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.pen, .plays {
+    height:24px;
+    width:24px;
+}
+.pen {
+    margin:0 5px 0 0;
+}
+.plays {
+    background-position:-30px -2px;
+}
+
+.btn {
+    display:inline-block;
+    font-size:16px;
+    font-weight:700;
+    text-decoration:none;
+    padding:10px;
+}
+
+.survey {
+    background:#1979bb;
+    color:#fff;
+}
+
+.playvideo {
+    background:#f0f1f0;
+    color:#666;
+}
+
+header {
+    background:#f0f1f0;
+    border-bottom:1px solid #62666a;
+    box-shadow: 0 1px 3px #666;
+    -moz-box-shadow: 0 1px 3px #666;
+    -webkit-box-shadow: 0 1px 3px #666;
+    padding:10px 20px;
+}
+
+header .survey {
+    float:right;
+    margin:10px 0 0;
+}
+
 #logo {
     background:url(../img/logo.png) no-repeat;
     display:block;
+    float:left;
     height:72px;
     text-indent:-9999px;
     width:135px;
 }
 
-.btn{
+#slidesection {
+    background:url(../img/background_top.jpg) center top no-repeat;
     color:#fff;
-    display:inline-block;
-    font-size:16px;
-    font-weight:700;
-    text-decoration:none;
+    padding:290px 0 100px;
+    text-align:center;
 }
 
-.survey {
-    background:#1979bb;
+#slidesection h1, #slidesection h2 {
+    font-weight:500;
+    text-shadow:1px 1px #111;
+}
+#slidesection h1 {
+    font-size:48px;
+}
+#slidesection h2 {
+    font-size:33px;
+}
+
+#actions {
+    padding:50px 0 70px;
+}
+#actions .btn {
+    box-shadow: 0 1px 2px #222;
+    -moz-box-shadow: 0 1px 2px #222;
+    -webkit-box-shadow: 0 1px 2px #222;
+    margin:0 10px 0 0;
+}
+
+#slideshow {
+    background:url(../img/slideshowbg.png) no-repeat;
+    height:635px;
+    margin:0 auto;
+    padding:76px 0 0 159px;
+    width:930px;
+}
+#slideshow ul {
+    background:#222;
+    height:481px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    width:770px;
+}
+
+
+#whatis {
+    color:#999;
+    font-size:16px;
+}
+#whatis h2 {
+    color:#312f3c;
+    font-size:36px;
 }
 
 #help {
