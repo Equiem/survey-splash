@@ -84,10 +84,23 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.s {
-    background:url(../img/bgsp.png) no-repeat;
+.fl {float:left}
+.fr {float:right}
+
+.s, .line {
     display:inline-block;
     vertical-align:middle;
+}
+
+.s {
+    background:url(../img/bgsp.png) no-repeat;
+}
+
+.line {
+    border-left:1px solid #999;
+    background:#000;
+    height:25px;
+    width:1px;
 }
 
 .pen, .plays {
@@ -100,20 +113,49 @@ textarea {
 .plays {
     background-position:-30px -2px;
 }
+.help {
+    background-position:0 -114px;
+    height:305px;
+    width:300px;
+}
+
+#socials .s {
+    height:45px;
+    margin:0 15px 0 0;
+    width:45px;
+}
+#socials .s span {
+    display:none;
+}
+#fb {
+    background-position:-98px 0;
+}
+#tw {
+    background-position:-164px 0;
+}
+#li {
+    background-position:-227px 0;
+}
+#mg {
+    background-position:-289px 0;
+}
+
+.cont {
+    margin:0 auto;
+    width:950px;
+}
 
 .btn {
     display:inline-block;
     font-size:16px;
     font-weight:700;
     text-decoration:none;
-    padding:10px;
+    padding:10px 15px;
 }
-
 .survey {
     background:#1979bb;
     color:#fff;
 }
-
 .playvideo {
     background:#f0f1f0;
     color:#666;
@@ -145,7 +187,7 @@ header .survey {
 #slidesection {
     background:url(../img/background_top.jpg) center top no-repeat;
     color:#fff;
-    padding:290px 0 100px;
+    padding:290px 0 50px;
     text-align:center;
 }
 
@@ -172,7 +214,7 @@ header .survey {
 
 #slideshow {
     background:url(../img/slideshowbg.png) no-repeat;
-    height:635px;
+    height:585px;
     margin:0 auto;
     padding:76px 0 0 159px;
     width:930px;
@@ -186,10 +228,31 @@ header .survey {
     width:770px;
 }
 
+#slideshownav {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#slideshownav li {
+    background:#999;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    cursor:pointer;
+    display:inline-block;
+    height:10px;
+    margin:0 5px 0 0;
+    width:10px;
+}
+#slideshownav li.active{
+    background:#000;
+}
+
 
 #whatis {
     color:#999;
     font-size:16px;
+    padding:20px 0 0;
 }
 #whatis h2 {
     color:#312f3c;
@@ -201,19 +264,48 @@ header .survey {
     background:#1276b3;
     padding:50px 0;
 }
+#help h3 {
+    font-size:36px;
+}
+#help .fl {
+    width:580px;
+}
 
+#chances {
+    background:url(../img/background_btm.jpg) center top no-repeat;
+    color:#fff;
+    padding:100px 0;
+    text-align:center;
+}
+#chances h3 {
+    padding:0 0 50px;
+}
+#chances h3, #chances p {
+    font-size:33px;
+    font-weight:500;
+}
+#socials {
+    border-top:1px dotted #aaa;
+    margin:90px auto 0;
+    padding:50px 0 0;
+    width:700px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+footer {
+    padding:30px 30px 20px;
+}
+footernav {
+    padding:5px 0 0;
+}
+#footernav a {
+    color:#999;
+    font-size:11px;
+    text-transform:uppercase;
+    text-decoration:none
+}
+#footernav img {
+    padding:0 25px 0 0;
+}
 
 
 /* ==========================================================================
