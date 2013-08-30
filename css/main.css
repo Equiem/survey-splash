@@ -83,15 +83,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 .fl {float:left}
 .fr {float:right}
-
 .s, .line {
     display:inline-block;
     vertical-align:middle;
 }
-
 .s {
     background:url(../img/bgsp.png) no-repeat;
 }
@@ -167,6 +164,11 @@ header {
     box-shadow: 0 1px 3px #666;
     -moz-box-shadow: 0 1px 3px #666;
     -webkit-box-shadow: 0 1px 3px #666;
+    position:fixed;
+    width:100%;
+    z-index:9999;
+}
+header div {
     padding:10px 20px;
 }
 
