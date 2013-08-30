@@ -219,12 +219,20 @@ header .survey {
     padding:76px 0 0 159px;
     width:930px;
 }
-#slideshow ul {
+#slideshow div {
     background:#222;
     height:481px;
+    overflow:hidden;
+    width:770px;
+}
+#slideshow ul {
     list-style:none;
     margin:0;
     padding:0;
+}
+#slideshow li {
+    float:left;
+    height:481px;
     width:770px;
 }
 
@@ -233,7 +241,7 @@ header .survey {
     padding:0;
     list-style:none;
 }
-#slideshownav li {
+#slideshownav a {
     background:#999;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
@@ -244,7 +252,10 @@ header .survey {
     margin:0 5px 0 0;
     width:10px;
 }
-#slideshownav li.active{
+#slideshownav a span {
+    display:none;
+}
+#slideshownav a.selected{
     background:#000;
 }
 
