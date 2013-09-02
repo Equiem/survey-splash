@@ -9,11 +9,11 @@
         <title>@60 CastleReagh</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel='stylesheet' media='all and (min-width:740px) and (min-device-width:740px),(max-device-width:800px) and (min-width:740px) and (orientation:landscape)' href='css/medium.css' />
+        <link rel='stylesheet' media='all and (min-width:980px) and (min-device-width:980px),all and (max-device-width:1024px) and (min-width:1024px) and (orientation:landscape)' href='css/large.css' />
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -22,72 +22,106 @@
         <![endif]-->
 
         <header>
-            <a href="" id="logo">@60 CastleReagh</a>
-            <a href="" class="survey"><i></i> Take the survey</a>
+            <div class="clearfix">
+                <a href="" id="logo">@60 CastleReagh</a>
+                <a href="http://fluidsurveys.com/s/lite-portal" class="btn survey"><i class="s pen"></i> Take the survey</a>
+            </div>
         </header>
 
-        <section>
-            <div>
-                <h1>Your @60 Castlereagh Tenant Portal is launching soon.</h1>
-                <h2>Help us build the perfect experience by filling in our survey</h2>
-            </div>
-            <div>
-                <a href="" class="survey">Take the Survey</a>
-                <a href="" class="playvideo">Play Tour Video</a>
+        <section id="slidesection">
+            <h1>Your @60 Castlereagh Tenant Portal is launching soon.</h1>
+            <h2>Help us build the perfect experience by filling in our survey</h2>
+            <div id="actions">
+                <a href="http://fluidsurveys.com/s/lite-portal" class="btn survey"><i class="s pen"></i> Take the Survey</a>
+                <a href="http://player.vimeo.com/video/54251243" class="btn playvideo fcb fancybox.iframe">Play Tour Video <i class="s plays"></i></a>
             </div>
             <div id="slideshow">
-
+                <div>
+                    <ul id="carousel">
+                        <li>
+                            <a href="http://player.vimeo.com/video/54251243" class="fcb fancybox.iframe">
+                                <img src="img/slideshow/portal1.jpg" alt="" />
+                            </a>
+                        </li>
+                        <li>Slide 2</li>
+                        <li>Slide 3</li>
+                        <li>Slide 4</li>
+                        <li>Slide 5</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-
-        <section id="help">
-            <div>
-                <h3>
-                    Help shape @60 Castlereagh! Take our survey and recieve a free coffee,
-                    plus go in the draw to win a $500 pre-paid credit card.
-                </h3>
+            <div id="slideshownav">
+            </div>
+            <div id="whatis" class="cont">
+                <h2>What is @60 Castlereagh? Let’s take a little tour. </h2>
                 <p>
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-                    vero eros et accumsan et iusto odio dignissim qui blandit praesent
-                    luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-                    molestie consequat.
+                    Exeritatem ut doluptaqui omni asincti atiissunt voloribus ipsame
+                    nam ipsam, sunt et enitaquae dolo quas ad eicab illam fuga. Neque
+                    nonem quis esti dolo que cus, sit ullam inisinum et id que dolupta
+                    porecti ureius, voluptat eatem arum verumquas dunt inci aces voluptas
+                    mos ea quis nobiscia volorenditis nis quatem quia aut et esti ullabo.
+                    Nequis expeditiur mil expeles sam de erum dolorem expel
+                    ipsum hitio. Epe voluptatum quis quundig natinctur?
+                    Qui asincit harum hilliquiam quae.
                 </p>
             </div>
         </section>
 
-        <section>
-            <div>
-                <p>Now’s your chance to shape the new @60 Castlereagh Portal.</p>
-                <a href="" class="survey">Take the Survey</a>
-                <div id="socials">
-                    <p>Share this with your team!</p>
-                    <a href="" id="fb">Facebook</a>
-                    <a href="" id="tw">Tweeter</a>
-                    <a href="" id="li">Linked in</a>
-                    <a href="" id="mg">Message</a>
+        <section id="help">
+            <div class="cont clearfix">
+                <div class="fl">
+                    <h3>
+                        Help shape @60 Castlereagh! Take our survey and recieve a free coffee,
+                        plus go in the draw to win a $500 pre-paid credit card.
+                    </h3>
+                    <p>
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                        molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                        vero eros et accumsan et iusto odio dignissim qui blandit praesent
+                        luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                        molestie consequat.
+                    </p>
                 </div>
-
+                <div class="fr">
+                    <i class="s help"></i>
+                </div>
             </div>
         </section>
 
-        <footer>
-            <div class="fl">
-                <a href="" id="equiem">Equiem</a>
-                <a href="">Terms</a>
-                <a href="">Privacy</a>
+        <section id="chances">
+            <div class="cont">
+                <h3>Now's your chance to shape the new @60 Castlereagh Portal.</h3>
+                <a href="http://fluidsurveys.com/s/lite-portal" class="btn survey"><i class="s pen"></i> Take the Survey</a>
+                <div id="socials">
+                    <p>Share this with your team!</p>
+                    <a href="" id="fb" class="s"><span>Facebook</span></a>
+                    <a href="" id="tw" class="s"><span>Tweeter</span></a>
+                    <a href="" id="li" class="s"><span>Linked in</span></a>
+                    <a href="" id="mg" class="s"><span>Message</span></a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="clearfix">
+            <div id="footernav" class="fl">
+                <a href="http://equiem.com.au" target="_blank"><img src="img/equiem.png" alt="Powered by Equiem" /></a>
+                <a href="">Terms</a>&nbsp;
+                <i class="s line"></i>&nbsp;
+                <a href="">Privacy</a>&nbsp;
+                <i class="s line"></i>&nbsp;
                 <a href="">Support</a>
             </div>
 
             <div class="fr">
-                <span id="lejones">Jones Lang LeSalle</span>
-                <span id="colonial">Colonial First State</span>
+                <img src="img/joneslangcolonial.jpg" alt="Jones Lang Lasalle, Colonial First State" />
             </div>
         </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="js/vendor/jquery.fancybox.pack.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
