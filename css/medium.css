@@ -1,0 +1,110 @@
+.cont {
+    margin:0 auto;
+    width:950px;
+}
+
+header .survey {
+  display:inline-block;
+  float:right;
+  margin:10px 0 0;
+}
+
+
+#slidesection {padding:290px 0 50px}
+#slidesection h1, #slidesection h2 {text-shadow:1px 1px #111}
+#slidesection h1 {font-size:48px}
+#slidesection h2 {font-size:33px}
+
+#actions {padding:50px 0 70px}
+#actions .btn {margin:0 10px 0 0; width:auto}
+
+#slideshow {
+  background:url(../img/slideshowbg.png) no-repeat;
+  display:block;
+  height:585px;
+  margin:0 auto;
+  padding:76px 0 0 159px;
+  width:930px;
+}
+#slideshow img {
+  width:100%;
+}
+#slideshow div {
+  background:#222;
+  height:481px;
+  overflow:hidden;
+  width:770px;
+}
+#slideshow ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#slideshow li {
+  float:left;
+  height:481px;
+  width:770px;
+}
+
+#slideshownav {
+display:block;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+#slideshownav a {
+  background:#999;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  cursor:pointer;
+  display:inline-block;
+  height:10px;
+  margin:0 5px 0 0;
+  width:10px;
+}
+#slideshownav a span {
+  display:none;
+}
+#slideshownav a.selected{
+  background:#000;
+}
+
+#whatis {
+  background:none;
+  padding:20px 0 0;
+}
+#whatis h2 {
+  font-size:36px;
+}
+
+#help {
+  padding:50px 0;
+}
+#help h3 {
+  font-size:36px;
+}
+#help .fl {
+  width:580px;
+}
+#help .fr {
+  display:block;
+}
+
+
+#chances {
+  padding:100px 0;
+}
+#chances h3 {
+  padding:0 0 50px;
+}
+#chances h3, #chances p {
+  font-size:33px;
+}
+#socials {
+  margin:90px auto 0;
+  padding:50px 0 0;
+  width:700px;
+}
+
+

@@ -85,14 +85,8 @@ textarea {
    ========================================================================== */
 .fl {float:left}
 .fr {float:right}
-.s, .line {
-    display:inline-block;
-    vertical-align:middle;
-}
-.s {
-    background:url(../img/bgsp.png) no-repeat;
-}
-
+.s, .line {display:inline-block; vertical-align:middle}
+.s {background:url(../img/bgsp.png) no-repeat}
 .line {
     border-left:1px solid #999;
     background:#000;
@@ -100,16 +94,9 @@ textarea {
     width:1px;
 }
 
-.pen, .plays {
-    height:24px;
-    width:24px;
-}
-.pen {
-    margin:0 5px 0 0;
-}
-.plays {
-    background-position:-30px -2px;
-}
+.pen, .plays {height:24px; width:24px}
+.pen {margin:0 5px 0 0}
+.plays {background-position:-30px -2px}
 .help {
     background-position:0 -114px;
     height:305px;
@@ -121,26 +108,11 @@ textarea {
     margin:0 15px 0 0;
     width:45px;
 }
-#socials .s span {
-    display:none;
-}
-#fb {
-    background-position:-98px 0;
-}
-#tw {
-    background-position:-164px 0;
-}
-#li {
-    background-position:-227px 0;
-}
-#mg {
-    background-position:-289px 0;
-}
-
-.cont {
-    margin:0 auto;
-    width:950px;
-}
+#socials .s span {display:none}
+#fb {background-position:-98px 0}
+#tw {background-position:-164px 0}
+#li {background-position:-227px 0}
+#mg {background-position:-289px 0}
 
 .btn {
     display:inline-block;
@@ -168,14 +140,9 @@ header {
     width:100%;
     z-index:9999;
 }
-header div {
-    padding:10px 5%;
-}
+header div {padding:10px 5%}
 
-header .survey {
-    float:right;
-    margin:10px 0 0;
-}
+header .survey {display:none}
 
 #logo {
     background:url(../img/logo.png) no-repeat;
@@ -188,123 +155,73 @@ header .survey {
 
 #slidesection {
     background:url(../img/background_top.jpg) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color:#fff;
-    padding:290px 0 50px;
+    padding:150px 0 0;
     text-align:center;
 }
-
-#slidesection h1, #slidesection h2 {
-    font-weight:500;
-    text-shadow:1px 1px #111;
-}
-#slidesection h1 {
-    font-size:48px;
-}
-#slidesection h2 {
-    font-size:33px;
-}
+#slidesection h1, #slidesection h2 {font-weight:500}
+#slidesection h1 {font-size:25px; text-shadow:1px 1px #111}
+#slidesection h2 {font-size:16px; text-shadow:1px 1px #aaa}
 
 #actions {
-    padding:50px 0 70px;
+    padding:20px 0 30px;
 }
 #actions .btn {
     box-shadow: 0 1px 2px #222;
     -moz-box-shadow: 0 1px 2px #222;
     -webkit-box-shadow: 0 1px 2px #222;
-    margin:0 10px 0 0;
+    margin:0 0 10px;
+    width:170px
 }
 
-#slideshow {
-    background:url(../img/slideshowbg.png) no-repeat;
-    height:585px;
-    margin:0 auto;
-    padding:76px 0 0 159px;
-    width:930px;
-}
-#slideshow img {
-    width:100%;
-}
-#slideshow div {
-    background:#222;
-    height:481px;
-    overflow:hidden;
-    width:770px;
-}
-#slideshow ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-#slideshow li {
-    float:left;
-    height:481px;
-    width:770px;
-}
-
-#slideshownav {
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-#slideshownav a {
-    background:#999;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    border-radius:10px;
-    cursor:pointer;
-    display:inline-block;
-    height:10px;
-    margin:0 5px 0 0;
-    width:10px;
-}
-#slideshownav a span {
+#slideshow, #slideshownav {
     display:none;
 }
-#slideshownav a.selected{
-    background:#000;
-}
-
 
 #whatis {
+    background:#fff;
     color:#999;
     font-size:16px;
-    padding:20px 0 0;
+    padding:20px 10px 0;
 }
 #whatis h2 {
     color:#312f3c;
-    font-size:36px;
+    font-size:25px;
 }
 
 #help {
     color:#fff;
     background:#1276b3;
-    padding:50px 0;
+    padding:30px 10px 10px;
 }
 #help h3 {
-    font-size:36px;
+    font-size:25px;
 }
-#help .fl {
-    width:580px;
+#help .fr {
+    display:none;
 }
 
 #chances {
     background:url(../img/background_btm.jpg) center top no-repeat;
     color:#fff;
-    padding:100px 0;
+    padding:20px 0;
     text-align:center;
 }
 #chances h3 {
-    padding:0 0 50px;
+    padding:0 0 20px;
 }
 #chances h3, #chances p {
-    font-size:33px;
+    font-size:25px;
     font-weight:500;
 }
 #socials {
     border-top:1px dotted #aaa;
-    margin:90px auto 0;
-    padding:50px 0 0;
-    width:700px;
+    margin:30px auto 0;
+    padding:0;
 }
 
 footer {
