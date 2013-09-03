@@ -28,7 +28,7 @@ header .survey {
   background:url(../img/slideshowbg_small.png) center 0 no-repeat;
   height:415px;
   margin:0 auto;
-  padding:52px 0 0;
+  padding:51px 0 0;
   width:750px;
 }
 #slideshow div, #slideshow li {
@@ -64,9 +64,9 @@ header .survey {
   border-radius:10px;
   cursor:pointer;
   display:inline-block;
-  height:10px;
-  margin:0 5px 0 0;
-  width:10px;
+  height:13px;
+  margin:0 10px 0 0;
+  width:13px;
 }
 #slideshownav a span {
   display:none;
