@@ -1,6 +1,6 @@
 .cont {
     margin:0 auto;
-    width:950px;
+    width:800px;
 }
 
 header .survey {
@@ -9,31 +9,39 @@ header .survey {
   margin:10px 0 0;
 }
 
-
-#slidesection {padding:290px 0 50px}
+#slidesection {
+  -webkit-background-size:auto;
+  -moz-background-size:auto;
+  -o-background-size:auto;
+  background-size:auto;
+  padding:290px 0 50px
+}
 #slidesection h1, #slidesection h2 {text-shadow:1px 1px #111}
-#slidesection h1 {font-size:48px}
-#slidesection h2 {font-size:33px}
+#slidesection h1 {font-size:43px}
+#slidesection h2 {font-size:26px}
 
 #actions {padding:50px 0 70px}
 #actions .btn {margin:0 10px 0 0; width:auto}
 
+#slideshow, #slideshownav {display:block !important}
 #slideshow {
-  background:url(../img/slideshowbg.png) no-repeat;
-  display:block;
-  height:585px;
+  background:url(../img/slideshowbg_small.png) center 0 no-repeat;
+  height:415px;
   margin:0 auto;
-  padding:76px 0 0 159px;
-  width:930px;
+  padding:52px 0 0;
+  width:750px;
 }
-#slideshow img {
-  width:100%;
+#slideshow div, #slideshow li {
+  height:332px;
+  width:530px;
 }
 #slideshow div {
   background:#222;
-  height:481px;
+  margin:0 auto;
   overflow:hidden;
-  width:770px;
+}
+#slideshow img {
+  width:100%;
 }
 #slideshow ul {
   list-style:none;
@@ -42,12 +50,9 @@ header .survey {
 }
 #slideshow li {
   float:left;
-  height:481px;
-  width:770px;
 }
 
 #slideshownav {
-display:block;
   margin:0;
   padding:0;
   list-style:none;
@@ -75,36 +80,34 @@ display:block;
   padding:20px 0 0;
 }
 #whatis h2 {
-  font-size:36px;
+  font-size:30px;
 }
 
 #help {
   padding:50px 0;
 }
 #help h3 {
-  font-size:36px;
+  font-size:26px;
 }
 #help .fl {
-  width:580px;
+  width:450px;
 }
 #help .fr {
   display:block;
 }
 
-
-#chances {
-  padding:100px 0;
-}
-#chances h3 {
-  padding:0 0 50px;
-}
-#chances h3, #chances p {
-  font-size:33px;
-}
+#chances {padding:100px 0}
+#chances h3 {padding:0 0 50px}
+#chances h3, #chances p {font-size:30px}
 #socials {
   margin:90px auto 0;
   padding:50px 0 0;
   width:700px;
 }
+
+footer {padding:30px 5% 20px}
+footer div {text-align:left; width:auto}
+#footernav #equiem{padding:0}
+#footernav span {display:inline}
 
 
