@@ -1,0 +1,18 @@
+.cont {width:950px}
+#slidesection h1 {font-size:48px}
+#slidesection h2 {font-size:33px}
+#slideshow {
+  background:url(../img/slideshowbg.png) center 0 no-repeat;
+  height:585px;
+  margin:0 auto;
+  padding:75px 0 0;
+  width:1090px;
+}
+#slideshow div, #slideshow li {
+  height:482px;
+  width:771px;
+}
+#whatis h2 {font-size:36px}
+#help .fl {width:580px}
+#help h3 {font-size:36px}
+#chances h3, #chances p {font-size:33px}
