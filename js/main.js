@@ -1,11 +1,11 @@
 (function() {
-  $('#carousel').carouFredSel({
-    auto: {
-      play : false,
-      duration: 1000
-    },
-    pagination: "#slideshownav"
-  });
+  // $('#carousel').carouFredSel({
+  //   auto: {
+  //     play : false,
+  //     duration: 1000
+  //   },
+  //   pagination: "#slideshownav"
+  // });
 
   $(".fcb").fancybox();
 
