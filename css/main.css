@@ -219,6 +219,12 @@ header .survey {display:none}
 #chances h3, #chances p {
     font-size:25px;
     font-weight:500;
+    text-shadow:1px 1px #111;
+}
+#chances .btn {
+    box-shadow:1px 2px 2px #222;
+    -moz-box-shadow:1px 2px 2px #222;
+    -webkit-box-shadow:1px 2px 2px #222;
 }
 #socials {
     border-top:1px dotted #aaa;
