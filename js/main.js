@@ -1,9 +1,6 @@
 (function() {
   $('#carousel').carouFredSel({
-    auto: {
-      play : true,
-      duration: 1000
-    },
+    auto: false,
     responsive: true,
     pagination: "#slideshownav"
   });
