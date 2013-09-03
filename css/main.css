@@ -160,7 +160,7 @@ header .survey {display:none}
     -o-background-size: cover;
     background-size: cover;
     color:#fff;
-    padding:150px 0 0;
+    padding:135px 0 0;
     text-align:center;
 }
 #slidesection h1, #slidesection h2 {font-weight:500}
@@ -174,12 +174,12 @@ header .survey {display:none}
     box-shadow: 0 1px 2px #222;
     -moz-box-shadow: 0 1px 2px #222;
     -webkit-box-shadow: 0 1px 2px #222;
-    margin:0 0 10px;
+    margin:0 10px 10px 0;
     width:170px
 }
 
 #slideshow, #slideshownav {
-    display:none;
+    display:none !important;
 }
 
 #whatis {
@@ -204,11 +204,14 @@ header .survey {display:none}
 #help .fr {
     display:none;
 }
+#help a {
+    color:#eee;
+}
 
 #chances {
     background:url(../img/background_btm.jpg) center top no-repeat;
     color:#fff;
-    padding:20px 0;
+    padding:20px 10px;
     text-align:center;
 }
 #chances h3 {
@@ -224,12 +227,11 @@ header .survey {display:none}
     padding:0;
 }
 
-footer {
-    padding:30px 5% 20px;
-}
-footernav {
-    padding:5px 0 0;
-}
+footer {padding:20px 0}
+footer div {text-align:center; width:100%}
+#footernav {padding:5px 0 0}
+#footernav #equiem{display:inline-block; padding:0 0 15px 33px}
+#footernav span {display:none}
 #footernav a {
     color:#999;
     font-size:11px;
