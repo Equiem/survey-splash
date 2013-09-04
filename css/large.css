@@ -1,18 +1,18 @@
-.cont {width:950px}
+.cont {width:900px}
 #slidesection h1 {font-size:48px}
 #slidesection h2 {font-size:33px}
 #slideshow {
-  background:url(../img/slideshowbg.png) center 0 no-repeat;
-  height:585px;
+  background:url(../img/slideshowbgv1.png) center 0 no-repeat;
+  height:545px;
   margin:0 auto;
-  padding:75px 0 0;
-  width:1090px;
+  padding:70px 0 0;
+  width:1020px;
 }
 #slideshow div, #slideshow li {
-  height:482px;
-  width:771px;
+  height:450px;
+  width:722px;
 }
 #whatis h2 {font-size:36px}
-#help .fl {width:580px}
+#help .fl {width:545px}
 #help h3 {font-size:36px}
-#chances h3, #chances p {font-size:33px}
+#chances h3, #chances p {font-size:31px}

@@ -59,14 +59,14 @@ header .survey {
 }
 #slideshownav a {
   background:#999;
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-  border-radius:10px;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  border-radius:12px;
   cursor:pointer;
   display:inline-block;
-  height:13px;
-  margin:0 10px 0 0;
-  width:13px;
+  height:12px;
+  margin:0 12px 0 0;
+  width:12px;
 }
 #slideshownav a span {
   display:none;
@@ -84,28 +84,31 @@ header .survey {
 }
 
 #help {
-  padding:50px 0;
+  padding:50px 0 40px;
 }
 #help h3 {
   font-size:26px;
+  line-height:40px;
 }
 #help .fl {
   width:430px;
 }
 #help .fr {
   display:block;
+  padding:30px 0 0;
 }
 
-#chances {padding:100px 0}
-#chances h3 {padding:0 0 50px}
+#chances {padding:110px 0 90px}
+#chances h3 {padding:0 0 60px}
 #chances h3, #chances p {font-size:30px}
 #socials {
-  margin:90px auto 0;
+  margin:65px auto 0;
   padding:50px 0 0;
   width:700px;
 }
+#socials p {margin:0; padding:20px 0 46px}
 
-footer {padding:30px 5% 20px}
+footer {padding:10px 5% 8px}
 footer div {text-align:left; width:auto}
 #footernav #equiem{padding:0}
 #footernav span {display:inline}
