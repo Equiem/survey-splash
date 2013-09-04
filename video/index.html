@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Building Video</title>
+  <link href="video-js.css" rel="stylesheet" type="text/css">
+  <script src="video.js"></script>
+  <script>
+    videojs.options.flash.swf = "video-js.swf";
+  </script>
+</head>
+<body>
+  <video id="building_video" class="video-js vjs-default-skin" controls autoplay preload="auto" width="800" height="450"
+   data-setup="{}">
+    <source src="videosources/video.mp4" type='video/mp4' />
+    <source src="videosources/video.webm" type='video/webm' />
+    <source src="videosources/video.ogv" type='video/ogg' />
+  </video>
+</body>
+</html>
