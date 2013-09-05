@@ -13,7 +13,10 @@
  * Skin Version: 4.3 (jPlayer 2.2.0)
  * Date: 19th November 2012
  */
-
+body {
+  margin:0;
+  padding:0;
+}
 div.jp-audio,
 div.jp-audio-stream,
 div.jp-video {
