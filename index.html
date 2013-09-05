@@ -26,13 +26,15 @@
 
         <header>
             <div class="clearfix">
-                <a href="" id="logo">@60 CastleReagh</a>
+                <a href="/" id="logo">@60 CastleReagh</a>
                 <a href="http://fluidsurveys.com/s/lite-portal" class="btn survey" target="_blank"><i class="s pen"></i> Take the survey</a>
             </div>
         </header>
 
+        <script id="slidesection-template" type="text/x-handlebars-template">
+            <h1>Your {{portal_name}} Tenant Portal is launching soon.</h1>
+        </script>
         <section id="slidesection">
-            <h1>Your @60 Castlereagh Tenant Portal is launching soon.</h1>
             <h2>Help us build the perfect experience by completing this short survey.</h2>
             <div id="actions">
                 <a href="http://fluidsurveys.com/s/lite-portal" class="btn survey" target="_blank"><i class="s pen"></i> Take the Survey</a>
@@ -43,37 +45,39 @@
                     <ul id="carousel">
                         <li>
                             <a href="http://player.vimeo.com/video/73602691?autoplay=1" class="fcb fancybox.iframe">
-                                <img src="img/slideshow/portal_1.jpg" alt="@60 Castlereagh" />
+                                <img src="img/slideshow/portal_1.jpg" alt="main page" />
                             </a>
                         </li>
-                        <li><img src="img/slideshow/portal_2.jpg" alt="Store @60 Castlereagh" /></li>
-                        <li><img src="img/slideshow/portal_3.jpg" alt="Events @60 Castlereagh" /></li>
-                        <li><img src="img/slideshow/portal_4.jpg" alt="News @60 Castlereagh" /></li>
-                        <li><img src="img/slideshow/portal_5.jpg" alt="Concierge @60 Castlereagh" /></li>
-                        <li><img src="img/slideshow/portal_6.jpg" alt="Community @60 Castlereagh" /></li>
-                        <li><img src="img/slideshow/portal_7.jpg" alt="Facilities @60 Castlereagh" /></li>
+                        <li><img src="img/slideshow/portal_2.jpg" alt="Store section" /></li>
+                        <li><img src="img/slideshow/portal_3.jpg" alt="Events section" /></li>
+                        <li><img src="img/slideshow/portal_4.jpg" alt="News section" /></li>
+                        <li><img src="img/slideshow/portal_5.jpg" alt="Concierge section" /></li>
+                        <li><img src="img/slideshow/portal_6.jpg" alt="Community section" /></li>
+                        <li><img src="img/slideshow/portal_7.jpg" alt="Facilities section" /></li>
                     </ul>
                 </div>
             </div>
             <div id="slideshownav">
             </div>
-            <div id="whatis" class="cont">
-                <h2>What is @60 Castlereagh? Let’s take a little tour. </h2>
+
+            <script id="whatis-template" type="text/x-handlebars-template">
+                <h2>What is {{portal_name}}? Let&#39;s take a little tour. </h2>
                 <p>
-                    @60 Castlereagh is a world-first web platform that makes it easier for you to connect with the
-                    60 Castlereagh community, keep up-to-date with the latest news and events around town,
+                    {{portal_name}} is a world-first web platform that makes it easier for you to connect with the
+                    {{building_name}} community, keep up-to-date with the latest news and events around town,
                     access the helpdesk and building services and other online amenities via a virtual concierge.
                     Last, but not least, as a member of this private digital community tap into exclusive
                     offers and deals from your favourite retailers.
                 </p>
-            </div>
+            </script>
+            <div id="whatis" class="cont"></div>
         </section>
 
-        <section id="help">
+        <script id="help-template" type="text/x-handlebars-template">
             <div class="cont clearfix">
                 <div class="fl">
                     <h3>
-                        Help shape @60 Castlereagh! Take our survey and recieve a free coffee,
+                        Help shape {{portal_name}}! Take our survey and recieve a free coffee,
                         plus go in the draw to win a $500 pre-paid credit card.
                     </h3>
                     <p>
@@ -90,24 +94,22 @@
                     <i class="s help"></i>
                 </div>
             </div>
-        </section>
+        </script>
+        <section id="help"></section>
 
+
+        <script id="chances-template" type="text/x-handlebars-template">
+            <h3>Now&#39;s your chance to shape the new {{portal_name}} Portal.</h3>
+        </script>
         <section id="chances">
             <div class="cont">
-                <h3>Now's your chance to shape the new @60 Castlereagh Portal.</h3>
                 <a href="http://fluidsurveys.com/s/lite-portal" class="btn survey" target="_blank"><i class="s pen"></i> Take the Survey</a>
                 <div id="socials">
                     <p>Share this with your team!</p>
-                    <a href="http://www.facebook.com/sharer.php?s=100&p[title]=60castlereagh&p[url]=http://60castlereagh.tenantportal.com.au&p[summary]=Help+shape+the+@60+Castlereagh+Tenant+Portal+with+this+short+survey" id="fb" class="s" target="_blank">
-                        <span>Share 60castlereagh on Facebook</span>
-                    </a>
-                    <a href="https://twitter.com/share?url=http%3A//60castlereagh.tenantportal.com.au&text=Help shape the @60 Castlereagh Tenant Portal with this short survey" id="tw" class="s" target="_blank">
-                        <span>Share 60castlereagh on Twitter</span>
-                    </a>
-                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A//60castlereagh.tenantportal.com.au&title=Help shape the @60 Castlereagh Tenant Portal with this short survey" id="li" class="s" target="_blank">
-                        <span>Share 60castlereagh on Linked in</span>
-                    </a>
-                    <a href="mailto:?body=http%3A//60castlereagh.tenantportal.com.au&subject=Help shape the @60 Castlereagh Tenant Portal with this short survey" id="mg" class="s"><span>Message</span></a>
+                    <a href="#" id="fb" class="s" target="_blank"><span>Share on Facebook</span></a>
+                    <a href="#" id="tw" class="s" target="_blank"><span>Share on Twitter</span></a>
+                    <a href="#" id="li" class="s" target="_blank"><span>Share on Linked in</span></a>
+                    <a href="#" id="mg" class="s"><span>Message</span></a>
                 </div>
             </div>
         </section>
@@ -126,6 +128,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="js/vendor/handlebars.min.js"></script>
         <script src="js/vendor/jquery.fancybox.pack.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
