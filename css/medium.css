@@ -6,7 +6,7 @@
 header .survey {
   display:inline-block;
   float:right;
-  margin:19px 0 0;
+  margin:13px 0 0;
 }
 
 #slidesection {
@@ -16,12 +16,11 @@ header .survey {
   background-size:auto;
   padding:290px 0 50px
 }
-#slidesection h1, #slidesection h2 {text-shadow:1px 1px #111}
 #slidesection h1 {font-size:43px}
 #slidesection h2 {font-size:26px}
 
 #actions {padding:50px 0 70px}
-#actions .btn {margin:0 10px 0 0; width:auto}
+#actions .btn {margin:0 5px 0 0; width:auto}
 
 #slideshow, #slideshownav {display:block !important}
 #slideshow {
@@ -110,7 +109,8 @@ header .survey {
 
 footer {padding:10px 5% 8px}
 footer div {text-align:left; width:auto}
-#footernav #equiem{padding:0}
+#footernav {padding:13px 0 0}
+#footernav #equiem {padding:0}
 #footernav span {display:inline}
 
 

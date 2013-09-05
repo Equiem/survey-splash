@@ -59,4 +59,7 @@
   });
 
   $(".fcb").fancybox();
+  // $("a#fancyBoxLink").fancybox({
+  //     'href' : '#myDivID',
+  // });
 })();
