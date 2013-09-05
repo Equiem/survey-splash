@@ -10,10 +10,8 @@
   }, source, template;
 
   // --------------------------------------------------
-  // Normal text replacement
+  // social media href replacement
   // --------------------------------------------------
-  $("#logo").html(config.portal_name);
-
   var e_building = encodeURIComponent(config.building_name),
       e_url      = encodeURIComponent(config.url),
       e_title    = encodeURIComponent(config.social_title);
