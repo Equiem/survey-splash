@@ -178,7 +178,7 @@ header .survey {display:none}
     width:170px
 }
 
-#slideshow, #slideshownav {
+#playWeb, #slideshow, #slideshownav {
     display:none !important;
 }
 

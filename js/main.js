@@ -1,11 +1,6 @@
 // video config url
 window.video_config = {
-  // poster : 'http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png',
-  // m4v    : 'http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v',
-  // ogv    : 'http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv',
-  // webmv  : 'http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm'
-
-  poster : 'http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png',
+  poster : 'http://equiem.github.io/survey-splash/video/cover.jpg',
   m4v    : 'http://equiem.github.io/survey-splash/video/intro.mp4',
   ogv    : 'http://equiem.github.io/survey-splash/video/intro.ogv',
   webmv  : 'http://equiem.github.io/survey-splash/video/intro.webm'
