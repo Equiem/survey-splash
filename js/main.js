@@ -87,7 +87,7 @@ $(function() {
     },
     smoothPlayBar: true,
     keyEnabled: true,
-     errorAlerts: false
+    errorAlerts: false
   });
 
   $("#playmobile").click(function(e) {
