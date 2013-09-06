@@ -63,17 +63,18 @@ $(function() {
     pagination: "#slideshownav"
   });
 
-  // m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
-  // ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
-  // webmv: "http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm",
-  // poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+
+        // m4v: video_config.m4v,
+        // ogv: video_config.ogv,
+        // webmv: video_config.webmv,
+        // poster: video_config.poster
   $("#jquery_jplayer_1").jPlayer({
     ready: function () {
       $(this).jPlayer("setMedia", {
-        m4v: video_config.m4v,
-        ogv: video_config.ogv,
-        webmv: video_config.webmv,
-        poster: video_config.poster
+        m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
+        ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
+        webmv: "http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm",
+        poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
       });
     },
     swfPath: "../js",
@@ -84,7 +85,8 @@ $(function() {
       cssClass: "jp-video-360p"
     },
     smoothPlayBar: true,
-    keyEnabled: true
+    keyEnabled: true,
+    errorAlerts: false
   });
 
   $("#playmobile").click(function(e) {
