@@ -1,15 +1,8 @@
-// vide url config
-window.video_config = {
-  poster : 'http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png',
-  m4v    : 'http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v',
-  ogv    : 'http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv',
-  webmv  : 'http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm'
-};
-
 $(function() {
   // READ THIS :
   // Please replace the meta tag title and description and heading link in
   // the html file, so at least google can index it!
+  // CHECK THE VIDEO URL AS WELL IN HTML
   var config = {
     url           : "http://60castlereagh.tenantportal.com.au",
     building_name : "60 Castlereagh",
