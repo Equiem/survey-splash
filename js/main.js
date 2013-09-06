@@ -1,4 +1,4 @@
-(function() {
+$(function() {
   // READ THIS :
   // Please replace the meta tag title and description and heading link in
   // the html file, so at least google can index it!
@@ -58,8 +58,38 @@
     pagination: "#slideshownav"
   });
 
+  $("#jquery_jplayer_1").jPlayer({
+    ready: function () {
+      $(this).jPlayer("setMedia", {
+        m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
+        ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
+        webmv: "http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm",
+        // m4v: "http://equiem.github.io/survey-splash/jplayer/videosources/video.mp4",
+        // ogv: "http://equiem.github.io/survey-splash/jplayer/videosources/video.ogv",
+        // webmv: "http://equiem.github.io/survey-splash/jplayer/videosources/video.webm",
+        // m4v: "videosources/video2.mp4",
+        // ogv: "videosources/video.ogv",
+        // webmv: "videosources/video.webm",
+        poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+      });
+    },
+    supplied: "webmv, ogv, m4v",
+    size: {
+      width: "640px",
+      height: "360px",
+      cssClass: "jp-video-360p"
+    },
+    smoothPlayBar: true,
+    keyEnabled: true
+  });
+
+  $("#playmobile").click(function(e) {
+    e.preventDefault();
+    $("#jquery_jplayer_1").jPlayer("play");
+  });
+
   $(".fcb").fancybox();
-  // $("a#fancyBoxLink").fancybox({
-  //     'href' : '#myDivID',
-  // });
-})();
+  $("a#fancyBoxLink").fancybox({
+      'href' : '#jp_container_1',
+  });
+});
