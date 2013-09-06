@@ -65,7 +65,4 @@ $(function() {
   });
 
   $(".fcb").fancybox();
-  $("a#fancyBoxLink").fancybox({
-      'href' : '#jp_container_1',
-  });
 });
