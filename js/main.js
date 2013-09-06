@@ -1,3 +1,11 @@
+// vide url config
+window.video_config = {
+  poster : 'http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png',
+  m4v    : 'http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v',
+  ogv    : 'http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv',
+  webmv  : 'http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm'
+};
+
 $(function() {
   // READ THIS :
   // Please replace the meta tag title and description and heading link in
@@ -7,12 +15,7 @@ $(function() {
     building_name : "60 Castlereagh",
     portal_name   : "@60 Castlereagh",
     social_title  : "Help shape the @60 Castlereagh Tenant Portal with this short survey"
-  }, source, template, video_config = {
-    poster : 'http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png',
-    m4v    : 'http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v',
-    ogv    : 'http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv',
-    webmv  : 'http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm'
-  };
+  }, source, template;
 
   // --------------------------------------------------
   // social media href replacement
@@ -61,32 +64,6 @@ $(function() {
     auto: false,
     responsive: true,
     pagination: "#slideshownav"
-  });
-
-
-        // m4v: video_config.m4v,
-        // ogv: video_config.ogv,
-        // webmv: video_config.webmv,
-        // poster: video_config.poster
-  $("#jquery_jplayer_1").jPlayer({
-    ready: function () {
-      $(this).jPlayer("setMedia", {
-        m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
-        ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
-        webmv: "http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm",
-        poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
-      });
-    },
-    swfPath: "../js",
-    supplied: "webmv, ogv, m4v",
-    size: {
-      width: "640px",
-      height: "360px",
-      cssClass: "jp-video-360p"
-    },
-    smoothPlayBar: true,
-    keyEnabled: true,
-    errorAlerts: false
   });
 
   $("#playmobile").click(function(e) {
