@@ -39,7 +39,7 @@
             <div id="actions">
                 <a href="http://fluidsurveys.com/s/lite-portal" class="btn survey" target="_blank"><i class="s pen"></i> Take the Survey</a>
                 <a href="http://player.vimeo.com/video/73602691?autoplay=1" class="btn playvideo fcb fancybox.iframe">Play Tour Video <i class="s plays"></i></a>
-                <a href="#jp_container_1" class="btn playvideo" id="fancyBoxLink">Test 1 <i class="s plays"></i></a>
+                <a href="#jp_container_1" class="btn playvideo fancyBoxLink">Test 1 <i class="s plays"></i></a>
                 <a href="#" class="btn playvideo" id="playmobile">Testss 2 <i class="s plays"></i></a>
             </div>
             <div id="slideshow">
@@ -80,14 +80,14 @@
                 <div class="fl">
                     <h3>
                         Help shape {{portal_name}}! Take our survey and recieve a free coffee,
-                        plus go in the draw to win a $500 pre-paid credit card.
+                        plus go in the draw to win a $250 pre-paid credit card.
                     </h3>
                     <p>
                         Help us build the perfect Portal for your building by completing our short survey.
                         It will help us tailor the news articles, events, store deals and products according
                         to what you like. Plus, for going through the trouble, we are giving away a free coffee
                         to all who complete the survey. You will also automatically go into the draw to win a
-                        $1000 pre-paid CBA credit card. A free coffee and a chance to win some shopping money,
+                        $250 pre-paid CBA credit card. A free coffee and a chance to win some shopping money,
                         all for 10 minutes of your time!
                         <a href="http://fluidsurveys.com/s/lite-portal" target="_blank">Take the survey now</a>.
                     </p>
@@ -182,10 +182,10 @@
                         this.jPlayer({
                             ready: function () {
                                 $(this).jPlayer("setMedia", {
-                                    m4v: "http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v",
-                                    ogv: "http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv",
-                                    webmv: "http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm",
-                                    poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+                                    m4v: window.video_config.m4v,
+                                    ogv: window.video_config.ogv,
+                                    webmv: window.video_config.webmv,
+                                    poster: window.video_config.poster
                                 });
                             },
                             swfPath: "js",
@@ -205,7 +205,7 @@
                     $("#jquery_jplayer_1").initplayer();
                 }
                 else {
-                    $("a#fancyBoxLink").fancybox({
+                    $(".fancyBoxLink").fancybox({
                         'href' : '#jp_container_1',
                         beforeShow  : function() {
                             // swf path is wrong when put it in the main.js
