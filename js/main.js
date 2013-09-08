@@ -1,9 +1,9 @@
 // video config url
 window.video_config = {
-  poster : 'http://equiem.github.io/survey-splash/video/cover.jpg',
-  m4v    : 'http://equiem.github.io/survey-splash/video/intro.mp4',
-  ogv    : 'http://equiem.github.io/survey-splash/video/intro.ogv',
-  webmv  : 'http://equiem.github.io/survey-splash/video/intro.webm'
+  poster : '/survey-splash/video/cover.jpg',
+  m4v    : '/survey-splash/video/video_v6.mp4',
+  ogv    : '/survey-splash/video/video_v6.ogv',
+  webmv  : '/survey-splash/video/video_v6.webm'
 };
 
 $(function() {
@@ -70,6 +70,4 @@ $(function() {
     e.preventDefault();
     $("#jquery_jplayer_1").jPlayer("play");
   });
-
-  $(".fcb").fancybox();
 });
