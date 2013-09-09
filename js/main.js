@@ -1,4 +1,5 @@
 // video config url
+// change this to absolute path when live
 window.video_config = {
   poster : 'http://equiem.github.io/survey-splash/video/cover.jpg',
   m4v    : 'http://equiem.github.io/survey-splash/video/video_v7.mp4',
