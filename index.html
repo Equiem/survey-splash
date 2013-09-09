@@ -178,6 +178,7 @@
             $(function(){
                 $.fn.initplayer = function() {
                     if (this.length) {
+                        // @todo: ie8 swf path is wrong when put it in the main.js (../js) ?
                         this.jPlayer({
                             ready: function () {
                                 $(this).jPlayer("setMedia", {
@@ -200,18 +201,14 @@
                     }
                 };
 
-                if ($("#slideshow").is(":hidden")) {
-                    $("#jquery_jplayer_1").initplayer();
-                }
-                else {
+                // initialise player
+                $("#jquery_jplayer_1").initplayer();
+
+                if (!$("#slideshow").is(":hidden")) {
                     $(".fancyBoxLink").fancybox({
                         'href' : '#jp_container_1',
                         beforeShow  : function() {
-                            // swf path is wrong when put it in the main.js
-                            $("#jquery_jplayer_1").initplayer();
-                        },
-                        beforeClose : function() {
-                            $("#jquery_jplayer_1").jPlayer("destroy");
+                            $("#jquery_jplayer_1").jPlayer("destroy").initplayer();
                         }
                     });
                 }
