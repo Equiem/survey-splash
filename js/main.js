@@ -1,9 +1,9 @@
 // video config url
 window.video_config = {
-  poster : 'http://equiem.github.io/survey-splash/video/cover.jpg',
-  m4v    : 'http://equiem.github.io/survey-splash/video/video_v6.mp4',
-  ogv    : 'http://equiem.github.io/survey-splash/video/video_v6.ogv',
-  webmv  : 'http://equiem.github.io/survey-splash/video/video_v6.webm'
+  poster : '/survey-splash/video/cover.jpg',
+  m4v    : '/survey-splash/video/video_v7.mp4',
+  ogv    : '/survey-splash/video/video_v7.ogv',
+  webmv  : '/survey-splash/video/video_v7.webm'
 };
 
 $(function() {
