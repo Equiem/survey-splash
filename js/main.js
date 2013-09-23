@@ -1,29 +1,18 @@
-// video config url
-// change this to absolute path when live
-window.video_config = {
-  poster : 'http://equiem.github.io/survey-splash/video/cover.jpg',
-  m4v    : 'http://equiem.github.io/survey-splash/video/video_v7.mp4',
-  ogv    : 'http://equiem.github.io/survey-splash/video/video_v7.ogv',
-  webmv  : 'http://equiem.github.io/survey-splash/video/video_v7.webm'
-};
-
 $(function() {
-  // READ THIS :
-  // Please replace the meta tag title and description and heading link in
-  // the html file, so at least google can index it!
-  var config = {
-    url           : "http://60castlereagh.tenantportal.com.au",
-    building_name : "60 Castlereagh",
-    portal_name   : "@60 Castlereagh",
-    social_title  : "Help shape the @60 Castlereagh Tenant Portal with this short survey"
-  }, source, template;
+  var source, template;
+
+  // change title
+  $("title").html("Welcome to " + window.site_config.building_name);
+
+  // change survey links
+  $(".survey_links").attr("href", window.site_config.survey_links);
 
   // --------------------------------------------------
   // social media href replacement
   // --------------------------------------------------
-  var e_building = encodeURIComponent(config.building_name),
-      e_url      = encodeURIComponent(config.url),
-      e_title    = encodeURIComponent(config.social_title);
+  var e_building = encodeURIComponent(window.site_config.building_name),
+      e_url      = encodeURIComponent(window.site_config.url),
+      e_title    = encodeURIComponent(window.site_config.social_title);
 
   $("#fb").attr("href", 'http://www.facebook.com/sharer.php?s=100&p[title]=' + e_building + '&p[url]=' + e_url + '&p[summary]=' + e_title);
   $("#li").attr("href", 'http://www.linkedin.com/shareArticle?mini=true&url=' + e_url+ '&title=' + e_title);
@@ -36,22 +25,22 @@ $(function() {
   // section: slide heading
   source   = $("#slidesection-template").html();
   template = Handlebars.compile(source);
-  $("#slidesection").prepend(template(config));
+  $("#slidesection").prepend(template(window.site_config));
 
   // section: what is
   source   = $("#whatis-template").html();
   template = Handlebars.compile(source);
-  $("#whatis").html(template(config));
+  $("#whatis").html(template(window.site_config));
 
   // section: help
   source   = $("#help-template").html();
   template = Handlebars.compile(source);
-  $("#help").html(template(config));
+  $("#help").html(template(window.site_config));
 
   // section: chances
   source   = $("#chances-template").html();
   template = Handlebars.compile(source);
-  $("#chances > .cont").prepend(template(config));
+  $("#chances > .cont").prepend(template(window.site_config));
 
   // --------------------------------------------------
   // Actions
