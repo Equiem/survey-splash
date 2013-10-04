@@ -6,6 +6,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Welcome to tenant portal</title>
+        <link rel="shortcut icon" href="<?php echo 'domains/' . $_SERVER['HTTP_HOST']; ?>/img/favicon.ico" type="image/x-icon" />
         <meta name="description" content="Tenant Portal" />
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport" />
         <link rel="stylesheet" href="css/jquery.fancybox.css" />
@@ -20,10 +21,16 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <?php
             if (empty($_SERVER['HTTP_HOST'])) {
-                echo '<script type="text/javscript">alert("Config file not found");</script>';
+                echo '<script type="text/javascript">alert("Config file not found");</script>';
             }
 
-            echo '<script src="domains/' . $_SERVER['HTTP_HOST'] . '/config.js"></script>';
+            echo '
+                <script src="domains/' . $_SERVER['HTTP_HOST'] . '/config.js"></script>
+                <style type="text/css">
+                    #slidesection{background:url(domains/' . $_SERVER['HTTP_HOST'] . '/img/background_top.jpg) center top no-repeat}
+                    #chances{background:url(domains/' . $_SERVER['HTTP_HOST'] . '/img/background_btm.jpg) center top no-repeat}
+                </style>
+            ';
         ?>
     </head>
     <body>
@@ -33,7 +40,7 @@
 
         <header>
             <div class="clearfix">
-                <a href="/" id="logo">Tenant Portal</a>
+                <a href="/" id="logo"><img src="<?php echo 'domains/' . $_SERVER['HTTP_HOST'] . '/img/logo.png'; ?>" /></a>
                 <a href="#" class="btn survey survey_links" target="_blank"><i class="s pen"></i> Take the survey</a>
             </div>
         </header>
@@ -72,7 +79,11 @@
 
                                 if ($i == 0) {
                                     $lists .= '
-                                        <li><a href="#jp_container_1" class="fancyBoxLink"><img src="' . $file . '" alt="Portal Image" /></a></li>
+                                        <li class="playcover">
+                                            <a href="#jp_container_1" class="fancyBoxLink">
+                                                <img src="' . $file . '" alt="Portal Image" /><i></i>
+                                            </a>
+                                        </li>
                                     ';
                                 }
                                 else {
@@ -116,26 +127,25 @@
             <div class="cont clearfix">
                 <div class="fl">
                     <h3>
-                        Help shape {{portal_name}}! Take our survey and recieve a free coffee,
-                        plus go in the draw to win a $250 pre-paid credit card.
+                        Help shape {{portal_name}}! Take our survey and go in the draw to win a $250 Coles Myer card.
                     </h3>
                     <p>
                         {{#if lite}}
                             Help us build the perfect Portal for your building by completing our short survey.
                             It will help us tailor the news articles, events, store deals and products according
-                            to what you like. Plus, for going through the trouble, we are giving away a free coffee
-                            to all who complete the survey. You will also automatically go into the draw to win a
-                            $250 pre-paid CBA credit card. A free coffee and a chance to win some shopping money,
+                            to what you like. Plus, for going through the trouble, everyone who completes the survey
+                            will automatically go into the draw to win a
+                            $250 Coles Myer card. <br/> A chance to win some shopping money,
                             all for 10 minutes of your time!
                             <a href="{{survey_links}}" target="_blank">Take the survey now</a>.
                         {{/if}}
 
                         {{#if mini}}
                             Help us build the perfect Portal for your building by completing our short survey.
-                            It will help us tailor the content according to what you like. Plus, for going through
-                            the trouble, we are giving away a free coffee to all who complete the survey.
-                            You will also automatically go into the draw to win a $250 pre-paid CBA credit card. A
-                            free coffee and a chance to win some shopping money, all for 10 minutes of your time!
+                            It will help us tailor the content according to what you like. Plus,
+                            for going through the trouble, everyone who completes the survey will
+                            automatically go into the draw to win a $250 Coles Myer card.
+                            <br/> A chance to win some shopping money, all for 10 minutes of your time!
                             <a href="{{survey_links}}" target="_blank">Take the survey now</a>.
                         {{/if}}
                     </p>
@@ -233,8 +243,7 @@
                                 $(this).jPlayer("setMedia", {
                                     m4v: window.video_config.m4v,
                                     ogv: window.video_config.ogv,
-                                    webmv: window.video_config.webmv,
-                                    poster: window.video_config.poster
+                                    webmv: window.video_config.webmv
                                 });
                             },
                             swfPath: "js",

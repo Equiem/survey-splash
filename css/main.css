@@ -145,16 +145,11 @@ header div {padding:12px 5%}
 header .survey {display:none}
 
 #logo {
-    background:url(../img/buildinglogo.png) no-repeat;
     display:block;
     float:left;
-    height:65px;
-    text-indent:-9999px;
-    width:135px;
 }
 
 #slidesection {
-    background:url(../img/background_top.jpg) center top no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -176,6 +171,22 @@ header .survey {display:none}
     -webkit-box-shadow:0 0 5px #222;
     margin:0 10px 10px 0;
     width:170px
+}
+
+#carousel .playcover {
+    position: relative;
+}
+#carousel .playcover a, #carousel .playcover i {
+    display:block;
+    height:100%;
+    width:100%
+}
+#carousel .playcover i {
+    background:url(../img/playcover.png) center no-repeat;
+    left:0;
+    position:absolute;
+    top:0;
+    z-index:1
 }
 
 #playWeb, #slideshow, #slideshownav {
@@ -219,7 +230,6 @@ header .survey {display:none}
 }
 
 #chances {
-    background:url(../img/background_btm.jpg) center top no-repeat;
     color:#fff;
     padding:20px 10px;
     text-align:center;

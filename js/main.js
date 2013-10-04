@@ -1,8 +1,6 @@
 $(function() {
-  var source, template;
-
   // change title
-  $("title").html("Welcome to " + window.site_config.building_name);
+  document.title = "Welcome to " + window.site_config.building_name;
 
   // change survey links
   $(".survey_links").attr("href", window.site_config.survey_links);
@@ -23,8 +21,8 @@ $(function() {
   // Handlebars text replacement
   // --------------------------------------------------
   // section: slide heading
-  source   = $("#slidesection-template").html();
-  template = Handlebars.compile(source);
+  var source   = $("#slidesection-template").html();
+  var template = Handlebars.compile(source);
   $("#slidesection").prepend(template(window.site_config));
 
   // section: what is
